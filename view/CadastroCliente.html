@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Cliente</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body>
+<body class="paginaCadastro">
     <header>
-        <img src="../assets/img/logo.png">
-        <h1>Xhopii</h1>
-        <h4>Sair</h4>
+        <section class="cabePrincipal">
+            <img src="../assets/img/logo.png">
+            <h1>Xhopii</h1>
+            <h4>Sair</h4>
+        </section>
     </header>
-    <nav>
+    <nav class="menuHorizontal">
         <ul>
             <li><a href="HomePage.html">Home</a></li>
             <li><a href="CadastroCliente.html">Cadastro Cliente</a></li>
@@ -50,11 +52,13 @@
             <h4>Selecionar foto de perfil</h4> 
         </div>
         <div class="linha">
-            <button>Escolher arquivo</button>
+            <button id="botaoArquivo">Escolher arquivo</button>
             <p>Nenhum arquivo escolhido</p>
         </div>
         <div class="linha">
-            <button>CADASTRAR</button>
+            <a href="HomePage.html">
+                <button id="botaoCadastrar">CADASTRAR</button>
+            </a>
         </div>
         </section>
     <footer>
