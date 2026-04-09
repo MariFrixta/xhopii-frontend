@@ -1,0 +1,113 @@
+
+body {
+    margin: 0%;
+    background-color: rgba(251, 86, 48);
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(245, 245, 245);
+}
+
+
+button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 350px;
+    background-color: rgba(245, 245, 245);
+}
+
+
+
+#logoxhopii {
+    object-fit: cover;
+    height: 70px;
+}
+
+#login {
+    justify-items: center;
+    width: 30%;
+    margin-left: 35%;
+    height: 300px;
+    margin-bottom: 5%;
+    margin-top: 90px;
+    background-color: rgba(245, 245, 245);
+}
+
+#sms {
+    color: blue;
+}
+
+#CadastroCliente, #CadastroFuncionario, #CadastroProduto, #CadastroLoja, #CadastroCupom {
+    background-color: rgba(245, 245, 245);
+    width: 400px;
+    margin: 120px auto 100px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0,1);
+    text-align: center;
+}
+
+#CadastroCliente h2, #CadastroFuncionario h2, #CadastroProduto h2, #CadastroLoja h2, #CadastroCupom h2 {
+    color: rgba(251, 86, 48);
+    margin-bottom: 25px;
+}
+
+.linha {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.linha input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid rgba(245, 245, 245);
+    border-radius: 4px;
+    font-size: 15px;
+    outline: none;
+}
+
+.linha input:focus {
+    border-color: rgba(251, 86, 48);
+}
+
+.linha button {
+    width: 90%;
+    padding: 12px;
+    background-color: rgba(251, 86, 48);
+    color: rgba(245, 245, 245);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.linha button:hover {
+    background-color: rgb(197, 42, 7);
+}
