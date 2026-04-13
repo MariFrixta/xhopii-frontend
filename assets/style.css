@@ -51,11 +51,21 @@ header h4 {
     color: rgba(251, 86, 48);
 }
 
-
 /* ------ NAV _____ MENU -----------------------------------------------------------------------------------------------------------------------------*/
 .menuHorizontal {
     width: 100%;
-    background-color: rgb(246, 127, 53);
+}
+#Cinza{
+    background-color: rgb(161, 161, 161);  
+}
+#Cinza ul li a{
+    color: #fb5630;     
+}
+#Laranja{
+    background-color: rgb(246, 127, 53); 
+}
+#Laranja ul li a{
+    color: #eee;   
 }
 .menuHorizontal ul {
     display: flex;
@@ -69,7 +79,6 @@ header h4 {
 }
 .menuHorizontal ul li a {
     font-size: 15px;
-    color: rgba(245, 245, 245);
     text-align: center;
     align-items: center;
     text-decoration: none;
@@ -80,7 +89,6 @@ header h4 {
     background-color: rgba(245, 245, 245);
     color: rgba(251, 86, 48);
 }
-
 /* ------ FOOTER _____ RODAPÉ -----------------------------------------------------------------------------------------------------------------------------*/
 footer {
     padding: 40px 60px;
@@ -506,4 +514,115 @@ button img {
 
 #Compra:hover {
     background-color: rgb(197, 42, 7);
+}
+
+#bodyViProd{
+    background-color: #838383;
+}
+#produtos {
+    width: 70%;
+    margin: 40px auto;
+    text-align: center;
+}
+.container-vitrine{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 8px;
+    background-color: #f5f5f5;
+}
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 colunas */
+    gap: 20px; /* espaço entre produtos */
+}
+.card-produto {
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: 0.2s;
+}
+
+.card-produto img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+.card-produto h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.card-produto p {
+    font-size: 12px;
+    color: gray;
+    margin: 3px 0;
+}
+.preco-card {
+    display: block;
+    color: #fb5630;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.estoque-card {
+    font-size: 12px;
+    color: gray;
+}
+ .grid-produtos a{
+    text-decoration: none;
+ }
+
+ /* produto*/
+
+#bodyProduto{
+    background-color: #f5f5f5;
+}
+.camisetasCores img{
+    border: #eee;
+}
+.informacaoProduto h2{
+    color: #333;
+}
+.informacaoProduto h3{
+    color: #fb5630;
+}
+.cores button, .tamanhos button{
+    width: fit-content;
+    margin: 4px 0 4px 0;
+}
+#preta{
+    border:#fb5630 solid 3px;
+}
+#azul{
+    opacity: 90%;
+}
+#verde{
+    opacity: 70%;
+}
+#cinza{
+    opacity: 50%;
+}
+#rosa{
+    opacity: 30%;
+}
+#carrossel {
+    width: 80%;
+    margin: 20px auto;
+}
+
+#carrossel img {
+    width: 100%;
+    border-radius: 6px;
+}
+#promo {
+    width: 80%;
+    margin: 10px auto;
+}
+
+#promo img {
+    width: 100%;
+    border-radius: 4px;
 }

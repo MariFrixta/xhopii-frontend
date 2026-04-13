@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar Cliente</title>
+    <title>Cadastrar Produto</title>
     <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body class="paginaCadastro">
@@ -14,7 +14,7 @@
             <h4>Sair</h4>
         </section>
     </header>
-    <nav class="menuHorizontal">
+    <nav id="Laranja" class="menuHorizontal">
         <ul>
             <li><a href="HomePage.html">Home</a></li>
             <li><a href="CadastroCliente.html">Cadastro Cliente</a></li>
@@ -25,38 +25,34 @@
             <li><a href="VisualizarProdutos.html">Ver Produtos</a></li>
         </ul>
     </nav>
-    <section id="CadastroCliente">
-        <h2>Cadastrar Cliente</h2>
+    <section id="CadastroProdutos">
+        <h2>Cadastrar Produtos</h2>
         <div class="linha">
             <input type="text" placeholder="Nome">   
         </div>
         <div class="linha">
-            <input type="text" placeholder="Sobrenome">
+            <input type="text" placeholder="Fabricante">
         </div>
         <div class="linha">
-            <input type="text" placeholder="CPF">
+            <input type="text" placeholder="Descrição">
         </div>
         <div class="linha">
-            <input type="date">
+            <input type="number" placeholder="Valor">
         </div>
         <div class="linha">
-            <input type="number" placeholder="Telefone">
+            <input type="number" placeholder="Quantidade">
         </div>
         <div class="linha">
-            <input type="email" placeholder="Email">
-        </div>
-        <div class="linha">
-            <input type="text" placeholder="Senha">
-        </div>
-        <div class="linha">
-            <h4>Selecionar foto de perfil</h4> 
+            <h4>Selecionar foto do produto</h4> 
         </div>
         <div class="linha">
             <button id="botaoArquivo">Escolher arquivo</button>
             <p id="mensagemArquivo">Nenhum arquivo escolhido</p>
         </div>
         <div class="linha">
-            <a href="HomePage.html" id="botaoCadastrar">CADASTRAR</a>
+            <a href="HomePage.html">
+                <button id="botaoCadastrar">CADASTRAR</button>
+            </a>
         </div>
         </section>
     <footer>
