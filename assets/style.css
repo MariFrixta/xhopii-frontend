@@ -509,7 +509,7 @@ button img {
     font-weight: bold;
     cursor: pointer;
     border-radius: 4px;
-    width: fit-content; /* Faz o botão abraçar apenas o texto dele, e não a tela toda */
+    width: fit-content; 
 }
 
 #Compra:hover {
@@ -532,8 +532,8 @@ button img {
 }
 .grid-produtos {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 colunas */
-    gap: 20px; /* espaço entre produtos */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
 }
 .card-produto {
     background-color: white;

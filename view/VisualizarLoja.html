@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar Cupom</title>
+    <title>Visualizar Lojas</title>
     <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body class="paginaCadastro">
+<body id="bodyViProd">
     <header>
-        <section class="headerLaranja"">
+        <section class="headerLaranja">
             <img src="../assets/img/logo.png">
             <h1>Xhopii</h1>
             <h4>Sair</h4>
         </section>
     </header>
+    
     <nav id="Laranja" class="menuHorizontal">
         <ul>
             <li><a href="HomePage.html">Home</a></li>
@@ -29,17 +30,81 @@
             <li><a href="VisualizarLoja.html">Ver Loja</a></li>
         </ul>
     </nav>
-    <section id="CadastroCupom">
-        <h2>Cadastrar Cupom de Desconto</h2>
-        <div class="linha">
-            <input type="text" placeholder="Código do Cupom">   
-        </div>
-        <div class="linha">
-            <a href="HomePage.html">
-                <button id="botaoCadastrar">CADASTRAR</button>
-            </a>
-        </div>
+
+    <main class="container-vitrine">
+        <section id="produtos">
+            <h2 class="titulo-vitrine">Lojas Cadastradas</h2>
+            <section class="grid-produtos">
+                
+                <div class="card-produto">
+                    <img src="../assets/img/produto1.png" alt="Logo da Loja">
+                    <div class="info-card">
+                        <h3>Eletiva Uniformes</h3>
+                        <p class="detalhes"><strong>Segmento:</strong> Vestuário</p>
+                        <p class="detalhes"><strong>Avaliação:</strong> ⭐⭐⭐⭐⭐ (5.0)</p>
+                        <div class="preco-estoque">
+                            <p class="preco-card">Loja Ativa</p>
+                            <p class="estoque-card">171 produtos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-produto">
+                    <img src="../assets/img/produto2.png" alt="Logo da Loja">
+                    <div class="info-card">
+                        <h3>TechZone Eletrônicos</h3>
+                        <p class="detalhes"><strong>Segmento:</strong> Informática</p>
+                        <p class="detalhes"><strong>Avaliação:</strong> ⭐⭐⭐⭐ (4.8)</p>
+                        <div class="preco-estoque">
+                            <p class="preco-card">Loja Ativa</p>
+                            <p class="estoque-card">342 produtos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-produto">
+                    <img src="../assets/img/produto3.png" alt="Logo da Loja">
+                    <div class="info-card">
+                        <h3>Moda Fashion Brasil</h3>
+                        <p class="detalhes"><strong>Segmento:</strong> Moda Feminina</p>
+                        <p class="detalhes"><strong>Avaliação:</strong> ⭐⭐⭐⭐⭐ (4.9)</p>
+                        <div class="preco-estoque">
+                            <p class="preco-card">Loja Ativa</p>
+                            <p class="estoque-card">520 produtos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-produto">
+                    <img src="../assets/img/produto4.png" alt="Logo da Loja">
+                    <div class="info-card">
+                        <h3>Livraria do Saber</h3>
+                        <p class="detalhes"><strong>Segmento:</strong> Livros e Papelaria</p>
+                        <p class="detalhes"><strong>Avaliação:</strong> ⭐⭐⭐⭐ (4.5)</p>
+                        <div class="preco-estoque">
+                            <p class="preco-card">Em Análise</p>
+                            <p class="estoque-card">89 produtos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-produto">
+                    <img src="../assets/img/produto5.png" alt="Logo da Loja">
+                    <div class="info-card">
+                        <h3>Game Store Oficial</h3>
+                        <p class="detalhes"><strong>Segmento:</strong> Jogos e Consoles</p>
+                        <p class="detalhes"><strong>Avaliação:</strong> ⭐⭐⭐⭐⭐ (5.0)</p>
+                        <div class="preco-estoque">
+                            <p class="preco-card">Loja Ativa</p>
+                            <p class="estoque-card">215 produtos</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
         </section>
+    </main>
+
     <footer>
         <div id="footerConteudo">
             <section class="footer">
@@ -109,6 +174,6 @@
         <p id="copyright">
             © 2023 Xhopii. Todos os direitos acadêmicos reservados
         </p>
-    </footer> 
+    </footer>
 </body>
 </html>
