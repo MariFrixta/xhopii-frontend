@@ -1,0 +1,509 @@
+/* --------------- RESET / GLOBAL --------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(251, 86, 48);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+/* ------ HEADER _____ CABEÇALHO -----------------------------------------------------------------------------------------------------------------------------*/
+header section{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: 0 40px;
+}
+header, footer{
+    width: 100%;
+}
+.headerCinza{
+    background-color: rgb(245, 245, 245);
+}
+.headerLaranja{
+    background-color: rgba(251, 86, 48);
+}
+#logoxhopii {
+    height: 45px;
+    margin-right: 10px;
+}
+header img {
+    height: 45px;
+    margin-right: 10px;
+}
+header h1 {
+    margin-right: 10px;
+}
+header h4 {
+    font-size: small;
+    cursor: pointer;
+    margin: 0;
+    margin-left: auto;
+}
+.headerLaranja h1, h4 {
+    color: rgb(255, 255, 255);
+}
+.headerCinza h1, h4 {
+    color: rgba(251, 86, 48);
+}
+
+
+/* ------ NAV _____ MENU -----------------------------------------------------------------------------------------------------------------------------*/
+.menuHorizontal {
+    width: 100%;
+    background-color: rgb(246, 127, 53);
+}
+.menuHorizontal ul {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.menuHorizontal ul li {
+    list-style: none;
+}
+.menuHorizontal ul li a {
+    font-size: 15px;
+    color: rgba(245, 245, 245);
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+.menuHorizontal ul li a:hover {
+    background-color: rgba(245, 245, 245);
+    color: rgba(251, 86, 48);
+}
+
+/* ------ FOOTER _____ RODAPÉ -----------------------------------------------------------------------------------------------------------------------------*/
+footer {
+    padding: 40px 60px;
+    background-color: rgba(245, 245, 245);
+    margin-top: 50px;
+    width: 100%;
+}
+#footerConteudo {
+    display: flex;
+    justify-content: space-between; /* Mantém as colunas separadas */
+    align-items: flex-start; /* O PULO DO GATO: Faz todas as colunas grudarem no topo! */
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer h5 {
+    font-size: 13px; 
+    color: #333;
+    margin-bottom: 20px; /* Aumentamos o espaço aqui (antes devia estar uns 10 ou 15px) */
+    font-weight: bold;
+}
+.footer p {
+    font-size: 12px; /* Deixa a fonte um pouquinho menor, mais delicada */
+    color: #757575; /* Um cinza um pouco mais suave que o preto */
+    margin-bottom: 12px; /* Aumentamos o espaço entre uma linha e outra */
+    cursor: pointer;
+}
+
+/* IMAGENS DO FOOTER */
+.footer img {
+    margin: 3px;
+}
+#iconredes{
+    width: 20px;
+    height: 20px;
+}
+.social {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    gap: 8px;
+}
+.social img {
+    width: 18px;
+    height: 18px;
+}
+.social p {
+    margin: 0;
+    font-size: 12px;
+}
+#elementosParaCentralizar {
+    display: flex;
+    flex-direction: column; /* Força os elementos a ficarem em uma coluna vertical */
+    align-items: flex-start; /* Garante que tudo fique alinhado à esquerda */
+    gap: 15px; /* Cria um espaço uniforme entre o título, o QR Code e os botões */
+}
+.gridPagamentos {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    gap: 8px;
+    margin-top: 15px;
+}
+#linhafooter {
+    margin-top: 20px;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+#copyright {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+/* ----- LOGIN/SENHA ------ LOGIN/SENHA ------ LOGIN/SENHA ------ LOGIN/SENHA ------ LOGIN/SENHA ------ ----- LOGIN/SENHA ------ LOGIN/SENHA ------ LOGIN/SENHA ------ LOGIN/SENHA */
+
+.main-laranja {
+    background-color: rgba(251, 86, 48);
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* ------ BODY _____ CAIXA-DE-LOGIN -----------------------------------------------------------------------------------------------------------------------------*/
+
+.caixa-login {
+    width: 380px;
+    margin: 120px auto;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.caixa-login h2 {
+    font-size: 20px;
+    color: rgba(25, 25, 25);
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+/* Transformando o link (<a>) em um botão visualmente */
+#entre {
+    width: 100%;
+    height: 40px;
+    display: block;             
+    text-align: center;          
+    background-color: #fb5630;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;      
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+#entre:hover {
+    background-color: #e14a28;
+}
+
+/* Links abaixo do botão */
+#sms {
+    padding-top: 8px;
+    margin-left: auto;
+}
+
+.links-auxiliares {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.links-auxiliares a {
+    color: #0056b3;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* Divisor "OU" */
+.divisor-ou {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #ccc;
+    font-size: 12px;
+}
+.linha button img {
+    width: 18px;
+}
+
+.linha button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #ccc;
+}
+.linha button:hover{
+    background-color: #ccc;
+    color: #333;
+}
+.divisor-ou::before, .divisor-ou::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #eee;
+    margin: 0 10px;
+}
+
+/* Botões Sociais */
+.botoes-sociais {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+#cadastrar {
+    color: rgba(251, 86, 48);
+}
+/*redefinir senha*/
+
+#bodyRedefinirSenha {
+    background-color: #ffffff;
+}
+
+#RedefinirSenha {
+    width: 380px;
+    margin: 140px auto;
+    background-color: #f5f5f5;
+    padding: 35px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
+
+#RedefinirSenha h3 {
+    margin-bottom: 20px;
+}
+
+/* SETA VOLTAR */
+#voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#voltar img {
+    width: 20px;
+}
+/* ----- CADASTRO ------ CADASTRO ------ CADASTRO ------ CADASTRO ------ CADASTRO ----- CADASTRO ------ CADASTRO ------ CADASTRO ------ CADASTRO ------ CADASTRO */
+
+/* ------ BODY _____ CAIXA-DE-CADASTRO -----------------------------------------------------------------------------------------------------------------------------*/
+
+.paginaCadastro {
+    background-color: rgb(206, 206, 206);;
+}
+
+#CadastroCliente, #CadastroFuncionario, #CadastroProdutos, #CadastroLoja, #CadastroCupom {
+    background-color: rgba(245, 245, 245);
+    width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#CadastroCliente h2, #CadastroFuncionario h2, #CadastroProdutos h2, #CadastroLoja h2, #CadastroCupom h2 {
+    color: rgba(251, 86, 48);
+    text-align: center;
+    font-size: 25px;
+    margin: 0 auto 30px auto;
+    font-weight: normal;
+    width: 70%;
+}
+
+.linha h4 {
+    color: rgba(251, 86, 48);
+    margin: 10px;
+}
+
+.linha input:focus {
+    border-color: rgba(251, 86, 48);
+}
+
+#botaoCadastrar {
+    width: 360px; /* MUDADO: Agora acompanha o tamanho do título e inputs */
+    display: block; /* MUDADO: Garante que o margin auto funcione perfeitamente */
+    margin: 20px auto 0 auto; /* MUDADO: Centraliza o botão */
+    padding: 12px;
+    background-color: rgba(251, 86, 48);
+    color: rgba(245, 245, 245);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+#botaoArquivo {
+    background-color: white;
+    color: rgba(251, 86, 48);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(251, 86, 48);
+    border-radius: 15px;
+    width: 30%;
+    height: 40px;
+    margin: 0 20px;
+    margin-top: 10px;
+    justify-content: center;
+    font-weight: 10;
+    font-size: 15px;
+}
+
+#botaoCadastrar:hover, #botaoArquivo:hover {
+    background-color: rgb(197, 42, 7);
+    color: white; 
+}
+
+#mensagemArquivo {
+    font-size: 13px;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+}
+/* ----- VIZUALIZAR-PRODUTO ------ VIZUALIZAR-PRODUTO ------ VIZUALIZAR-PRODUTO ------ VIZUALIZAR-PRODUTO ------ VIZUALIZAR-PRODUTO ----- VIZUALIZAR-PRODUTO */
+/* ----- LAYOUT PRINCIPAL DO PRODUTO ------ */
+
+.containerProduto {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 60px auto; 
+    padding: 0 20px;
+}
+
+/* ------ COLUNA 1: MINIATURAS ------ */
+.camisetasCores {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+}
+
+.miniatura {
+    width: 80px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.miniatura.ativo {
+    border-color: rgba(251, 86, 48);
+}
+
+/*------ COLUNA 2: IMAGEM PRINCIPAL ------*/
+.imagemDestaque img {
+    width: 450px; /* Deixa a imagem principal grandona */
+    max-width: 100%;
+}
+
+/* =========================================
+   COLUNA 3: INFORMAÇÕES E BOTÕES
+========================================= */
+.infoProduto {
+    display: flex;
+    flex-direction: column; /* Empilha os textos e botões */
+    max-width: 400px; /* Evita que o texto estique infinitamente */
+}
+
+.infoProduto h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.preco {
+    font-size: 30px;
+    color: rgba(251, 86, 48);
+    margin-bottom: 15px;
+}
+
+.disponibilidade {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.titulo-secao {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tamanhoSelecionado {
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.cores, .tamanhos {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Se não couber, joga pra baixo */
+}
+
+.cores button, .tamanhos button {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.cores button:hover, .tamanhos button:hover {
+    border-color: rgba(251, 86, 48);
+    color: rgba(251, 86, 48);
+}
+
+/* Botão Laranjão de Compra */
+#Compra {
+    background-color: rgba(251, 86, 48);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    width: fit-content; /* Faz o botão abraçar apenas o texto dele, e não a tela toda */
+}
+
+#Compra:hover {
+    background-color: rgb(197, 42, 7);
+}
