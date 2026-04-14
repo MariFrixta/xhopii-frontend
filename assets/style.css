@@ -338,11 +338,15 @@ button {
 
 #CadastroCliente h2, #CadastroFuncionario h2, #CadastroProdutos h2, #CadastroLoja h2, #CadastroCupom h2 {
     color: rgba(251, 86, 48);
-    text-align: center;
+    text-align: left;
     font-size: 25px;
-    margin: 0 auto 30px auto;
-    font-weight: normal;
-    width: 70%;
+    margin: 0 auto 45px 50px;
+    font-weight: bolder;
+    width: 360px;
+}
+
+#CadastroCliente .linha, #CadastroFuncionario .linha, #CadastroProdutos .linha, #CadastroLoja .linha, #CadastroCupom .linha {
+    justify-content: center; /* Garante que os itens fiquem centralizados */
 }
 
 .linha h4 {
@@ -353,6 +357,13 @@ button {
 .linha input:focus {
     border-color: rgba(251, 86, 48);
 }
+
+.linha input {
+    margin: 0 50px 0 50px;
+    background-color: rgba(245, 245, 245);
+    
+}
+
 
 #botaoCadastrar {
     width: 360px; /* MUDADO: Agora acompanha o tamanho do título e inputs */
@@ -372,17 +383,14 @@ button {
 #botaoArquivo {
     background-color: white;
     color: rgba(251, 86, 48);
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgba(251, 86, 48);
-    border-radius: 15px;
-    width: 30%;
-    height: 40px;
-    margin: 0 20px;
-    margin-top: 10px;
-    justify-content: center;
-    font-weight: 10;
-    font-size: 15px;
+    border: 1px solid rgba(251, 86, 48);
+    border-radius: 4px; /* Removemos os 15px para tirar o formato de pílula */
+    width: 140px; /* Botão mais curtinho */
+    height: 35px;
+    margin: 0 15px 0 0; /* Espaço apenas à direita para afastar da frase */
+    font-weight: normal;
+    font-size: 13px;
+    cursor: pointer;
 }
 
 #botaoCadastrar:hover, #botaoArquivo:hover {
@@ -392,8 +400,9 @@ button {
 
 #mensagemArquivo {
     font-size: 13px;
-    padding: 5px;
-    margin-top: 15px;
+    padding: 10px 0 0 0;
+    margin: 0;
+    color: rgb(68, 68, 68);
 }
 
 button img {
